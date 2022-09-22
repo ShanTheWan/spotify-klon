@@ -10,13 +10,13 @@
 			<form class="login" method="POST" action="login_check.php">
 				<div class="login__field">
 					<i class="login__icon fas fa-user"></i>
-					<input type="text" class="login__input" placeholder="User name / Email">
+					<input type="text" class="login__input" placeholder="User name / Email" name="email">
 				</div>
 				<div class="login__field">
 					<i class="login__icon fas fa-lock"></i>
-					<input type="password" class="login__input" placeholder="Password">
+					<input type="password" class="login__input" placeholder="Password" name="geslo1">
 				</div>
-				<button class="button login__submit" name="submit">
+				<button type="submit" class="button login__submit" name="submit">
 					<span class="button__text">Log in now</span>
 					<i class="button__icon fas fa-chevron-right"></i>
 				</button>				

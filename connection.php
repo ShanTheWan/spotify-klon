@@ -1,15 +1,11 @@
 <?php
+$serverName = "localhost";
+$dBUserName = "root";
+$dBPassword = "";
+$dBName = "spotify";
 
-$servername = "localhost";
-$username = "root";
-$password = "";
+$link = mysqli_connect($serverName, $dBUserName, $dBPassword, $dBName);
 
-$conn = mysqli_connect($servername, $username, $password);
-
-if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
+if (!$link) {
+    die("Povezava ni uspela" . mysqli_connect_error());
 }
-
-header('Location: login.php');
-
-?>
